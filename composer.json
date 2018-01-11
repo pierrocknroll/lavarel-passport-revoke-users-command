@@ -1,0 +1,9 @@
+{
+    "name": "pierrocknroll/lavarel-passport-revoke-users-command",
+    "description": "This command revoke access and refresh tokens of given users in Laravel Passport",
+    "autoload": {
+        "psr-4": {
+            "Pierrocknroll\\LavarelPassportRevokeUsersCommand\\": ""
+        }
+    }
+}
