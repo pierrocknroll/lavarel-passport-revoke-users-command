@@ -1,9 +1,18 @@
 {
     "name": "pierrocknroll/lavarel-passport-revoke-users-command",
     "description": "This command revoke access and refresh tokens of given users in Laravel Passport",
-    "autoload": {
-        "psr-4": {
-            "Pierrocknroll\\LavarelPassportRevokeUsersCommand\\": ""
+    "type":"library",
+    "homepage":"https://github.com/pierrocknroll/lavarel-passport-revoke-users-command",
+    "autoload":{
+        "psr-4":{
+            "Pierrocknroll\\LavarelPassportRevokeUsersCommand\\":"src"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Pierrocknroll\\LavarelPassportRevokeUsersCommand\\ServiceProvider"
+            ]
         }
     }
 }

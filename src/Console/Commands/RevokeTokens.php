@@ -1,6 +1,6 @@
 <?php
 
-namespace Pierrocknroll\LavarelPassportRevokeUsersCommand;
+namespace Pierrocknroll\LavarelPassportRevokeUsersCommand\Console\Commands;
 
 use App\User;
 use Illuminate\Console\Command;
