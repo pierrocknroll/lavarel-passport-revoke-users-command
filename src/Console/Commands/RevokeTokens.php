@@ -31,13 +31,13 @@ class RevokeTokens extends Command
     {
         $users = $this->argument('user');
         $ids = []; // List of access tokens
-        foreach ($users as $user)
-        {
+        foreach ($users as $user) {
             $userModel = null;
-            if (is_numeric($user))
+            if (is_numeric($user)) {
                 $userModel = User::find($user);
-            elseif (filter_var($user, FILTER_VALIDATE_EMAIL))
+            } elseif (filter_var($user, FILTER_VALIDATE_EMAIL)) {
                 $userModel = User::where('email', $user)->first();
+            }
 
             if (!$userModel) {
                 $this->warn('Unknown user ' . $user);
