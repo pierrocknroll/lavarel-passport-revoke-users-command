@@ -1,5 +1,5 @@
 # lavarel-passport-revoke-users-command
-This command revoke access and refresh tokens of given users in Laravel Passport
+This command revokes access and refresh tokens of given users in Laravel Passport
 
 ## Installation
 * Install the command with composer :
